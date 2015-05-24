@@ -17,7 +17,7 @@ namespace   MixIt.Public.WebApi
 
             app.UseIdentityServerBearerTokenAuthentication(new IdentityServerBearerTokenAuthenticationOptions
             {
-                Authority = "https://localhost:44305/identity",
+                Authority = "http://localhost:44305/identity",
                 RequiredScopes = new[] { "publicApi" }
             });
             

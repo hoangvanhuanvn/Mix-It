@@ -25,33 +25,33 @@ namespace  MixIt.Identity.Server.Config
                     AccessTokenLifetime = 3600
                    
                 },
-                new Client
-                {
-                    ClientName = "Resource Explorer",
-                    Enabled = true,
+                //new Client
+                //{
+                //    ClientName = "Resource Explorer",
+                //    Enabled = true,
 
-                    ClientId = "ResourceExplorer",
-                    ClientSecret = "secret",
-                    Flow = Flows.Implicit,
+                //    ClientId = "ResourceExplorer",
+                //    ClientSecret = "secret",
+                //    Flow = Flows.Implicit,
                     
-                    ClientUri = "http://www.resExplorer.com",
+                //    ClientUri = "http://www.resExplorer.com",
                 
-                    RequireConsent = true,
-                    AllowRememberConsent = true,
+                //    RequireConsent = true,
+                //    AllowRememberConsent = true,
                     
-                    RedirectUris = new List<string>
-                    {
-                        "http://localhost:10071/",
-                    },
+                //    RedirectUris = new List<string>
+                //    {
+                //        "http://localhost:10071/",
+                //    },
 
-                    PostLogoutRedirectUris = new List<string>
-                    {
-                        "http://localhost:10071/",
-                    },
+                //    PostLogoutRedirectUris = new List<string>
+                //    {
+                //        "http://localhost:10071/",
+                //    },
                     
-                    IdentityTokenLifetime = 360,
-                    AccessTokenLifetime = 3600
-                }
+                //    IdentityTokenLifetime = 360,
+                //    AccessTokenLifetime = 3600
+                //}
             };
         }
     }

@@ -39,6 +39,7 @@ namespace MixIt.Identity.Server
                     SigningCertificate = LoadCertificate(),
 
                     Factory = Factory.Configure("MyIdentityDb"),
+                    RequireSsl = false,
 
                     CorsPolicy = CorsPolicy.AllowAll
                 });

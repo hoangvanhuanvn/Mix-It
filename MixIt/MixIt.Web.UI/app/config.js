@@ -4,8 +4,9 @@
     var app = angular.module('identityApp');
 
     var apiUrl = 'http://localhost:10073/';
-    var idsrvUrl = 'https://localhost:44305/identity/';
-    var publicApiUrl = 'http://localhost:14117/'
+    //var idsrvUrl = 'http://localhost:44305/identity/';
+    var idsrvUrl = 'https://localhost:44333/id/';
+    var publicApiUrl = 'http://localhost:14117/';
 
     var api = {
         account: apiUrl + 'api/account/',

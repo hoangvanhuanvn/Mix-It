@@ -29,12 +29,13 @@
     app.factory('AuthService', function (localStorageService, $http, Session, config) {
         return {
             login: function (credentials) {
-                var user = { grant_type: 'password', username: credentials.userName, password: credentials.password, scope: 'openid publicApi' };
+                var user = { grant_type: 'password', username: credentials.userName, password: credentials.password, scope: 'openid email publicApi' };
 
                 //required for Idsrv V3 call (required bys spec)
                 var urlEncodedUrl = {
                     'Content-Type': 'application/x-www-form-urlencoded',
-                    'Authorization': 'Basic SWRlbnRpdHlXZWJVSTpzZWNyZXQ='
+                    //'Authorization': 'Basic SWRlbnRpdHlXZWJVSTpzZWNyZXQ='
+                    'Authorization': 'Basic SWRlbnRpdHlXZWJVSTplZDIwYzEzYTQ3ZTZiZWNiMWVhZjgyYWYyYjc1ZjdiMWVkZjBmYWNlY2NhMjQyMTA5MGVlZDg2MWNhY2VjNTdi'
                 };
                 
                 return $http({
